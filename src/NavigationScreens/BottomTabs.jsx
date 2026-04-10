@@ -8,7 +8,7 @@ import ScanScreen from '../Componants/ScanScreen/Scan';
 import SavedScreen from '../Componants/SavedDocsScreen';
 import ServicesScreen from '../Componants/ServicesScreen';
 import SettingsScreen from '../Componants/SettingsScreen';
-
+import CreatePinScreen from '../Componants/Auth/CreatePinScreen.js'
 const Tab = createBottomTabNavigator();
 
 const BottomTabs = () => {
@@ -56,6 +56,7 @@ const BottomTabs = () => {
       <Tab.Screen name="Saved" component={SavedScreen} />
       <Tab.Screen name="Services" component={ServicesScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name="Login" component={CreatePinScreen} />
     </Tab.Navigator>
   );
 };
